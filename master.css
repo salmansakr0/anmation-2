@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+}
+
+.load{
+    display: flex;
+    justify-content: center;
+    margin: 290px auto;
+}
+
+.load div{
+    width: 30px;
+    height: 30px;
+    background-color: orchid;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation-name: up-and-down;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+}
+.load .tow{
+    animation-delay: 0.3s;
+}
+
+.load .three{
+    animation-delay: 0.6s;
+}
+
+@keyframes up-and-down{
+    to {
+        opacity: 0.2;
+        transform: translateY(-20px);
+    }
+}
+    
